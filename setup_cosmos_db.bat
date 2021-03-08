@@ -2,8 +2,8 @@
 
 
 echo Creating CosmosDB account and db with name=%1 in resource group=%2
-set ACC_NAME=%1
-set RG_NAME=%2
+set RG_NAME=%1
+set ACC_NAME=%2
 set DB_NAME=ChildrenTodoListDb
 call az cosmosdb create --name %ACC_NAME% --resource-group %RG_NAME% --enable-free-tier
 call az cosmosdb sql database create --account-name %ACC_NAME% --resource-group %RG_NAME% --name %DB_NAME%
