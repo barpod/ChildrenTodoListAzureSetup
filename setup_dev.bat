@@ -4,7 +4,7 @@ rem set APP_NAME=ChildrenTodoListDev
 set RG_NAME=children-todo-list-dev-rg 
 set COSMOS_DB_ACC_NAME=child-todo-list-cosmos-db-dev
 set APP_NAME=ChildrenTodoListDev
-set DB_NAME=ChildrenTodoListDb
+set DB_NAME=ChildrenTodoListDbDev
 
 call az group create -l westeurope -n %RG_NAME%
 

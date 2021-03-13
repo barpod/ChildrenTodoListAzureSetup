@@ -12,3 +12,4 @@ FOR /F "tokens=*" %%g IN ('call az cosmosdb keys list --resource-group %RG_NAME%
 
 az webapp config appsettings set -g %RG_NAME% -n %APP_NAME% --settings CosmosDbKey=%PRIMARY_MASTER_KEY%
 az webapp config appsettings set -g %RG_NAME% -n %APP_NAME% --settings CosmosDbUri=https://%ACC_NAME%.documents.azure.com:443/
+az webapp config appsettings set -g %RG_NAME% -n %APP_NAME% --settings CosmosDbName=%DB_NAME%
